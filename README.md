@@ -1,9 +1,9 @@
 # **T11 - Booking Validator**
 
 ## **Description**
-Booking Validator is one of the components of the Dentistimo system. Dentistimo allows users to view and book dentist appointments in the city of Gothenburg. More information is found [here](https://git.chalmers.se/courses/dit355/dit356-2022/t-11/t11-project).
+Booking Validator is one of the components of the Dentistimo system. Dentistimo allows users to view and book dentist appointments in the city of Gothenburg. More information is found [here](https://github.com/T-11-Dentistimo/T11---Project-documentation).
 
-This component is triggered by incoming booking requests sent from users using the [GUI component](https://git.chalmers.se/courses/dit355/dit356-2022/t-11/t11-web-application). The Booking validator works as a load balancer for the booking request process while ensuring that no unintentional duplicate appointments are stored and reduces the recurring failures. The booking requests are forwarded to the [DB Model Handler component](https://git.chalmers.se/courses/dit355/dit356-2022/t-11/t11-database-model-handler). When a response is received from the DB Model handler, the next booking is sent. Depending on the response, an email confirmation is sent to the respective user. 
+This component is triggered by incoming booking requests sent from users using the [GUI component](https://github.com/T-11-Dentistimo/T11-Web-Application). The Booking validator works as a load balancer for the booking request process while ensuring that no unintentional duplicate appointments are stored and reduces the recurring failures. The booking requests are forwarded to the [DB Model Handler component](https://github.com/T-11-Dentistimo/T11-Database-Model-Handler). When a response is received from the DB Model handler, the next booking is sent. Depending on the response, an email confirmation is sent to the respective user. 
 
 ### **<ins>Responsibility</ins>**
 
@@ -85,14 +85,14 @@ For MacOS:
 
 The purpose of the test is to show the different states of the circuit breaker and provides information about the time, in seconds, it takes for the circuit breaker to be triggered depending on the request sent every X milliseconds. The variable X depends on the value given to `REQUEST_INTERVAL`. The variable is set up to send a request every 30 milliseconds.
 
-To run this test make sure to have the Booking validator and the [DB Model Handler](https://git.chalmers.se/courses/dit355/dit356-2022/t-11/t11-database-model-handler) running. To see the reaction in the browser, the whole system is require. Follow the instruction in  [Documentation repo](https://git.chalmers.se/courses/dit355/dit356-2022/t-11/t11-project)
+To run this test make sure to have the Booking validator and the [DB Model Handler](https://github.com/T-11-Dentistimo/T11-Database-Model-Handler) running. To see the reaction in the browser, the whole system is require. Follow the instruction in  [Documentation repo](https://github.com/T-11-Dentistimo/T11---Project-documentation)
 
 
 > * Stress test 
 
 This is a stress test to see how long the booking request process takes in a millisecond when the system is being loaded with a request every 200 milliseconds, i.e., 5 requests per second. The number of requests per second can be modified in the method test. 
 
-To run this test the Booking Validator and the [DB Model Handler](https://git.chalmers.se/courses/dit355/dit356-2022/t-11/t11-database-model-handler) are required.
+To run this test the Booking Validator and the [DB Model Handler](https://github.com/T-11-Dentistimo/T11-Database-Model-Handler) are required.
 
 
 ## **Common errors**
